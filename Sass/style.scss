@@ -1,0 +1,142 @@
+@import 'setup';
+
+/*---------------Balises html--------------*/
+
+body{
+	font-family: 'Habibi', serif;
+	background-color: #7B69FF;
+	text-align: center;
+}
+aside{
+	background-color: #C64156;
+	float: right;
+	width: 35%;
+}
+section{
+	float: left;
+	width: 75%;
+	background-color: white;
+}
+article{
+	width: 45%;
+	margin-left : 5px;
+	margin-right: 5px;
+}
+footer{
+	background-color: #7B69FF;
+	clear: both;
+}
+nav{
+	background-color: #7B69FF;
+	text-align: center;
+}
+h1 {
+	font-family:'Source Sans Pro', sans-serif;
+	color: #8C0836;
+	text-align: center;
+}
+h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #8C0836;
+	text-align: center;
+}
+h3{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #8C0836;
+	text-align: center;
+}
+p{
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+	justify-content: space-between;
+}
+a{
+	text-decoration: none;
+}
+img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+/*----------------Balises combinées-----------------*/
+
+nav ul li {
+	display: inline;
+	padding: 0 0.6em;
+}
+
+/*------classes--------------*/
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+.pink{
+	color: #8C0709;
+}
+.dblue{
+	color: #2A306E;
+}
+.easteregg:hover{
+	opacity: 0.4;
+}
+.easteregg:hover .hidden {
+	display: block;
+}
+.easteregg{
+	position: relative;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	overflow :hidden;
+	text-align: center;
+}
+.hidden{
+	display: none;
+	opacity: 0.9;
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	text-align: center;
+	margin: auto;
+	border-radius: 50%;
+	font-size: 16px;
+	top: 0;
+}
+.hidden p {
+	margin-top: 40%;
+	text-align: center;
+}
+.clear {
+	clear:both;
+}
+
+/*-------------------Pseudo-classes-------------*/
+
+a:hover{
+	text-decoration: underline;
+}
+
+a:visited{
+	opacity: 0.5;
+}
+
+/*------pseudo-elements------*/
+
+h3::before{
+	border-top: 5px;
+}
+/*-------------ID----------------*/
+
+#margin{
+	margin-left: 60px;
+	margin-right: 60px;
+}
